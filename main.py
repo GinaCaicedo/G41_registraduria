@@ -6,6 +6,22 @@ from flask_cors import cross_origin
 import json
 from waitress import serve
 
+##importar los controladores
+
+from Controladores.ControladorCandidato import ControladorCandidato
+ControladorCandidato=ControladorCandidato()
+
+from Controladores.ControladorMesa import ControladorMesa
+ControladorMesa=ControladorMesa()
+
+from Controladores.ControladorPartido import ControladorPartido
+ControladorPartido=ControladorPartido()
+
+from Controladores.ControladorResultado import ControladorResultado
+ControladorResultado=ControladorResultado()
+
+
+
 app = Flask(__name__)
 cors = CORS(app)
 
