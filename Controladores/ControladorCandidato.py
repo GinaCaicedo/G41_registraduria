@@ -1,6 +1,5 @@
 from Modelos.Candidato import Candidato
 
-
 class ControladorCandidato():
     def __init__(self):
         print("Creando ControladorCandidato")

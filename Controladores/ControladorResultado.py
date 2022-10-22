@@ -1,7 +1,7 @@
 from Modelos.Resultado import Resultado
 class ControladorResultado():
     def __init__(self):
-        print("Creando ControladorResultado")
+        print("Creando Controlador Resultado")
 
     def index(self):
         print("Listar todos los Resultados")
@@ -9,9 +9,7 @@ class ControladorResultado():
             "_id": "abc123",
             "numero_mesa": "2",
             "cedula_candidato": "123232",
-            "numero_votos": "50"
-
-        }
+            "numero_votos": "50"}
         return [unResultado]
 
     def create(self, infoResultado):
@@ -25,8 +23,7 @@ class ControladorResultado():
             "_id": "abc123",
             "numero_mesa": "2",
             "cedula_candidato": "123232",
-            "numero_votos": "50"
-        }
+            "numero_votos": "50" }
         return elResultado
 
     def update(self, id, infoResultado):

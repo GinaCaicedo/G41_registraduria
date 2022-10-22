@@ -1,16 +1,14 @@
 from Modelos.Partido import Partido
-
 class ControladorPartido():
     def __init__(self):
-        print("Creando ControladorPartido")
+        print("Creando Controlador Partido")
 
     def index(self):
         print("Listar todos los Partidos")
         unPartido = {
             "_id": "p1",
             "nombre": "verde",
-            "lema": "verde verde"
-        }
+            "lema": "verde verde"}
         return [unPartido]
 
     def create(self, infoPartido):
@@ -23,8 +21,7 @@ class ControladorPartido():
         elPartido = {
             "_id": "p1",
             "nombre": "verde",
-            "lema": "verde verde"
-        }
+            "lema": "verde verde" }
         return elPartido
 
     def update(self, id, infoPartido):

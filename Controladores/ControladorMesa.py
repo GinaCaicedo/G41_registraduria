@@ -9,8 +9,7 @@ class ControladorMesa():
         unaMesa = {
             "_id": "m1",
             "numero": "1",
-            "cantidad_inscritos": "100"
-        }
+            "cantidad_inscritos": "100"}
         return [unaMesa]
 
     def create(self, infoMesa):
@@ -23,8 +22,7 @@ class ControladorMesa():
         laMesa = {
             "_id": "m1",
             "numero": "1",
-            "cantidad_inscritos": "100"
-        }
+            "cantidad_inscritos": "100"}
         return laMesa
 
     def update(self, id, infoMesa):

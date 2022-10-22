@@ -10,21 +10,16 @@ from waitress import serve
 
 from Controladores.ControladorCandidato import ControladorCandidato
 controladorCandidato=ControladorCandidato()
-
 from Controladores.ControladorMesa import ControladorMesa
 controladorMesa=ControladorMesa()
-
 from Controladores.ControladorPartido import ControladorPartido
 controladorPartido=ControladorPartido()
-
 from Controladores.ControladorResultado import ControladorResultado
 controladorResultado=ControladorResultado()
 
 
-
 app = Flask(__name__)
 cors = CORS(app)
-
 
 @app.route("/", methods=['GET'])
 def test():
@@ -32,12 +27,10 @@ def test():
     json["message"] = "Server running ..."
     return jsonify(json)
 
-
 @app.route("/Candidatos", methods=['GET'])
 def getCandidatos():
     json = controladorCandidato.index()
     return jsonify(json)
-
 
 @app.route("/Candidatos", methods=['POST'])
 def crearCandidato():
@@ -64,7 +57,6 @@ def eliminarCandidato(id):
     json = controladorCandidato.delete(id)
     return jsonify(json)
 
-
 ###Mesa
 #
 @app.route("/Mesa", methods=['GET'])
@@ -79,12 +71,10 @@ def crearMesa():
     json = controladorMesa.create(data)
     return jsonify(json)
 
-
 @app.route("/Mesa/<string:id>", methods=['GET'])
 def getMesa(id):
     json = controladorMesa.show(id)
     return jsonify(json)
-
 
 @app.route("/Mesa/<string:id>", methods=['PUT'])
 def modificarMesa(id):
@@ -92,20 +82,16 @@ def modificarMesa(id):
     json = controladorMesa.update(id, data)
     return jsonify(json)
 
-
 @app.route("/Mesa/<string:id>", methods=['DELETE'])
 def eliminarMesa(id):
     json = controladorMesa.delete(id)
     return jsonify(json)
 
-
-
 #Partido
-
 
 @app.route("/Partido",methods=['GET'])
 def getPartidos():
-    json=ControladorPartido.index()
+    json=controladorPartido.index()
     return jsonify(json)
 
 @app.route("/Partido",methods=['POST'])
@@ -128,7 +114,7 @@ def modificarPartido(id):
 def eliminarPartido(id):
     json=controladorPartido.delete(id)
     return jsonify(json)
-#
+
 # Resultado
 @app.route("/Resultado",methods=['GET'])
 def getResultado():
@@ -155,7 +141,6 @@ def modificarResultado(id):
 def eliminarResultado(id):
     json=controladorResultado.delete(id)
     return jsonify(json)
-
 
 def loadFileConfig():
     with open('config.json') as f:
