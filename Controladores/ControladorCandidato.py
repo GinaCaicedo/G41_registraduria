@@ -6,10 +6,10 @@ class ControladorCandidato():
     def index(self):
         print("Listar todos los Candidatos")
         unCandidato = {
-            "_id": "r1",
+            "_id": "c1",
             "numero_resolucion": "1",
             "nombre": "Gina",
-            "apellido": "Caiced0"
+            "apellido": "Caicedo"
         }
         return [unCandidato]
 
@@ -21,10 +21,10 @@ class ControladorCandidato():
     def show(self, id):
         print("Mostrando un Candidato con id ", id)
         elCandidato = {
-            "_id": "r1",
+            "_id": "c1",
             "numero_resolucion": "1",
             "nombre": "Gina",
-            "apellido": "Caiced0"
+            "apellido": "Caicedo"
         }
         return elCandidato
 

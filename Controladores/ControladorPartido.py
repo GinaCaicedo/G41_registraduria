@@ -1,4 +1,5 @@
 from Modelos.Partido import Partido
+
 class ControladorPartido():
     def __init__(self):
         print("Creando ControladorPartido")

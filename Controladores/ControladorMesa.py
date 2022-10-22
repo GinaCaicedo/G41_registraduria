@@ -7,9 +7,9 @@ class ControladorMesa():
     def index(self):
         print("Listar todos los Mesas")
         unaMesa = {
-            "_id": "a12",
+            "_id": "m1",
             "numero": "1",
-            "cantidad_inscritos": "23"
+            "cantidad_inscritos": "100"
         }
         return [unaMesa]
 
@@ -21,8 +21,7 @@ class ControladorMesa():
     def show(self, id):
         print("Mostrando un Mesa con id ", id)
         laMesa = {
-
-            "_id": "a12",
+            "_id": "m1",
             "numero": "1",
             "cantidad_inscritos": "100"
         }
