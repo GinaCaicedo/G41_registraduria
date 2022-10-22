@@ -2,7 +2,7 @@ from Modelos.Mesa import Mesa
 
 class ControladorMesa():
     def __init__(self):
-        print("Creando ControladorMesa")
+        print("Creando Controlador Mesa")
 
     def index(self):
         print("Listar todos los Mesas")

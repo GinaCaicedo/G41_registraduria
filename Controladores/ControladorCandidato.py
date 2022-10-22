@@ -1,4 +1,6 @@
 from Modelos.Candidato import Candidato
+
+
 class ControladorCandidato():
     def __init__(self):
         print("Creando ControladorCandidato")
@@ -6,7 +8,7 @@ class ControladorCandidato():
     def index(self):
         print("Listar todos los Candidatos")
         unCandidato = {
-            "_id": "c1",
+            "cedula": "1023867848",
             "numero_resolucion": "1",
             "nombre": "Gina",
             "apellido": "Caicedo"
@@ -21,7 +23,7 @@ class ControladorCandidato():
     def show(self, id):
         print("Mostrando un Candidato con id ", id)
         elCandidato = {
-            "_id": "c1",
+            "cedula": "1023867848",
             "numero_resolucion": "1",
             "nombre": "Gina",
             "apellido": "Caicedo"
